@@ -13,7 +13,7 @@ class Rl < Formula
   end
 
   def install
-    bin.install "rl-v#{version}-macos-#{Hardware::CPU.arch}" => "wirtual"
+    bin.install "rl-v#{version}-macos-#{Hardware::CPU.arch}" => "rl"
   end
 
   test do

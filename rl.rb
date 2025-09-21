@@ -1,4 +1,4 @@
-class RlhubCli < Formula
+class Rl < Formula
   desc "Enterprise-grade RL training infrastructure for everyone"
   homepage "https://github.com/rlhub-dev/homebrew-tap"
   version "2.2.0"  # Auto-updated by GitHub Actions

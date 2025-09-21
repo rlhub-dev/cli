@@ -5,15 +5,15 @@ class RlhubCli < Formula
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://github.com/rlhub-dev/homebrew-tap/releases/download/v#{version}/rlhub-cli-v#{version}-macos-arm64"
+    url "https://github.com/rlhub-dev/homebrew-tap/releases/download/v#{version}/rl-v#{version}-macos-arm64"
     sha256 "sha256:4e832ee07535c3ef35db5af5a6bd2a824b330270d0fb98796171fe8b59e624a8"  # Auto-updated by GitHub Actions
   else
-    url "https://github.com/rlhub-dev/homebrew-tap/releases/download/v#{version}/rlhub-cli-v#{version}-macos-amd64"
+    url "https://github.com/rlhub-dev/homebrew-tap/releases/download/v#{version}/rl-v#{version}-macos-amd64"
     sha256 "PLACEHOLDER_AMD64_SHA"  # Auto-updated by GitHub Actions
   end
 
   def install
-    bin.install "rlhub-cli-v#{version}-macos-#{Hardware::CPU.arch}" => "wirtual"
+    bin.install "rl-v#{version}-macos-#{Hardware::CPU.arch}" => "wirtual"
   end
 
   test do
